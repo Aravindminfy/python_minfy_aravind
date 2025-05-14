@@ -91,15 +91,14 @@ class BankAccount:
 
 # Example usage:
 account = BankAccount("123456", 1000)
-print(account.get_balance())  # Should return 1000
+print(account.get_balance()) 
 account.deposit(500)
-print(account.get_balance())  # Should return 1500
+print(account.get_balance())  
 account.withdraw(200)
-print(account.get_balance())  # Should return 1300
-print(account.get_account_number())  # Should return "123456"
+print(account.get_balance())  
+print(account.get_account_number())  
 
-# Direct access should not be allowed
 try:
-    account._balance = 2000  # This should be discouraged or prevented
+    account._balance = 2000  
 except AttributeError:
     print("Cannot directly access private attribute")
